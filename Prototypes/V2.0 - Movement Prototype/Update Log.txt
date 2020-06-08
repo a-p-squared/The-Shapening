@@ -1,0 +1,8 @@
+The Shapening
+-------------
+
+V2.0 Update Log
+
+*Added Keyboard Input Functionality
+*Cleaner, More effective code
+*Added Timer Functionality

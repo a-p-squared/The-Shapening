@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial scale = 1.0">
+    <title>THE SHAPENING</title>
+</head>
+
+<body>
+    <div>
+        <canvas id="canvas" style="width: 1200px; height: 700px; border: 1px solid;margin-left: 150px;">
+            Your Browser Does Not Support Canvas!
+        </canvas>
+    </div>
+
+    <script>
+
+        //document.addEventListener("keydown",keyDownHandler,false);
+        //document.addEventListener("keyup",keyUpHandler,false);
+
+        var rightPressed = false;
+        var leftKeyPressed = false;
+        
+
+        var canvas = document.getElementById("canvas");
+
+        canvas.width = canvas.scrollWidth;
+        canvas.height = canvas.scrollHeight;
+
+        var ctx = canvas.getContext("2d");
+
+        ctx.font = "30px Times New Roman";
+        ctx.fillText("THE SHAPENING", 100, 50);
+
+        ctx.font = "30px Impact";
+        ctx.fillText("Score : 0", 1000, 50);
+        ctx.fillText("Time   : 0", 1000, 90);
+
+        ctx.fillRect(150, 150, 200, 400);
+        ctx.fillRect(500,150,200,400);
+        ctx.fillRect(850, 150, 200, 400);
+
+        ctx.fillStyle = "skyblue";
+        ctx.beginPath();
+        ctx.arc(600, 350, 90, 0, 2 * Math.PI);
+        ctx.stroke();
+        ctx.fill();
+
+    </script>
+
+</body>
+
+</html>

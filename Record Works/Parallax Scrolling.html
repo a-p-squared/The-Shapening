@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+
+        .parallax {
+            background-image: url("Photo.jpg");
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @media only screen and(max-device-width:1366px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>In this example we have turned off parallax scrolling for mobile devices. It works as expected on all desktop
+        screen sizes.</p>
+    <p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
+    <div class="parallax"></div>
+    <div style="height:1000px; background-image: url('download.jpg');font-size: 36px">
+        This div is just here to enable scrolling
+    </div>
+    <div class="parallax"></div>
+</body>
+
+</html>

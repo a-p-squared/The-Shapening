@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            -webkit-animation-name: example;
+            -webkit-animation-duration: 4s;
+            -webkit-animation-direction: reverse;
+            animation-name: example;
+            animation-duration: 8s;
+            animation-direction: reverse;
+        }
+
+        @-webkit-keyframes example {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        @keyframes example {
+            0% {
+                background-color: lightblue;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: orange;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: yellow;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: red;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: green;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <br>
+    <div style="left: 100px"></div>
+</body>
+
+</html>

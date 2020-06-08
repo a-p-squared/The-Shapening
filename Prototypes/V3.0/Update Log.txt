@@ -1,0 +1,7 @@
+The Shapening
+-------------
+
+V3.0 Update Log
+
+*Added Main Menu
+*Added Pause Functionality

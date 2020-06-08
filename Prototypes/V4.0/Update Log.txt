@@ -1,0 +1,9 @@
+The Shapening
+-------------
+
+V4.0 Update Log
+
+*Cleaner and optimized code
+*Added Comments
+*Added Killzone Functionality
+*Added Game Over Functionality
